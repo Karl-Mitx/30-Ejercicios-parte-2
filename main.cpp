@@ -156,6 +156,16 @@ cout << "El numero " << f << " no es bisiesto" << endl;
 int ejercicio5() {
     cout << "Ejercicio 5 If-Else: " << endl;
     cout << "Programa que determine si una letra ingresada por el usuario es vocal o consonante: " << endl;
+    char c;
+bool islowercaseVowel, isuppercaseVowel;
+cout << "Ingrese una letra: " << endl;
+cin >> c;
+isuppercaseVowel = ( c== 'A' || c== 'E' || c== 'I' || c== 'O' || c== 'U' );
+islowercaseVowel = ( c== 'a' || c== 'e' || c== 'i' || c== 'o' || c== 'u' );
+if (islowercaseVowel || isuppercaseVowel)
+cout << "La letra " << c << " vocal" << endl;
+else
+cout << "La letra " << c << " consonante" << endl;
 
     return 0;
 }

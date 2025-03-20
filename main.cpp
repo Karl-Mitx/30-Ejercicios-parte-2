@@ -177,7 +177,9 @@ cin >> g;
 bool primo = true;
  for (int i = 2 ; i < g ; i++) {
 if (g % i == 0) {
-primo = false;}
+primo = false;
+cout << "El numero " << g << " no es primo" << endl;
+}
 }
 if (primo ==  true) {
 cout << "El numero " << g << " es primo" << endl;
@@ -188,7 +190,14 @@ cout << "El numero " << g << " es primo" << endl;
 int ejercicio7() {
     cout << "Ejercicio 7 If-Else: " << endl;
     cout << "Programa que determine si un año ingresado por el usuario es un año de nacimiento válido (mayor que 1900 y menor que el año actual): " << endl;
-
+    int h;
+cin >> h;
+if (h > 1900 ) {
+cout << "Su año de nacimiento es " << h << ", gracias por ingresarlo" << endl;
+} if (h < 1900) {
+cout << "El numero " << h << " no es valido" << endl;
+} if (h > 2025) {
+cout << "Usted todavia no ha nacido! XD" << endl;}
     return 0;
 }
 int ejercicio8() {

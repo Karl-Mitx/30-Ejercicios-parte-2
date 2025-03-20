@@ -143,6 +143,13 @@ int ejercicio3() {
 int ejercicio4() {
     cout << "Ejercicio 4 If-Else: " << endl;
     cout << "Programa que determine si un año ingresado por el usuario es bisiesto o no: " << endl;
+    int f;
+    cin >> f;
+if (f % 4 == 0) {
+cout << "El numero " << f << " es bisiesto" << endl;
+} else {
+cout << "El numero " << f << " no es bisiesto" << endl;
+}
 
     return 0;
 }

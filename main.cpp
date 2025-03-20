@@ -172,6 +172,16 @@ cout << "La letra " << c << " consonante" << endl;
 int ejercicio6() {
     cout << "Ejercicio 6 If-Else: " << endl;
     cout << "Programa que pida al usuario ingresar un número y verifique si es primo o no: " << endl;
+int g;
+cin >> g;
+bool primo = true;
+ for (int i = 2 ; i < g ; i++) {
+if (g % i == 0) {
+primo = false;}
+}
+if (primo ==  true) {
+cout << "El numero " << g << " es primo" << endl;
+}
 
     return 0;
 }

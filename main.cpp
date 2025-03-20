@@ -124,8 +124,20 @@ int ejercicio2() {
 }
 int ejercicio3() {
     cout << "Ejercicio 3 If-Else: " << endl;
-    cout << "Programa que solicite al usuario ingresar tres números y muestre el mayor de los tres: " << endl;
-
+    cout << "Programa que solicite al usuario ingresar tres numeros y muestre el mayor de los tres: " << endl;
+    int c, d, e;
+    cout << "Ingrese primer numero: ";
+    cin >> c;
+    cout << "Ingrese segundo numero: ";
+    cin >> d;
+    cout << "Ingrese tercer numero: ";
+    cin >> e;
+    int mayor = c;
+    if (d > mayor)
+    mayor = d;
+    if (e > mayor)
+    mayor = e;
+    cout << "El numero mayor es: " << mayor << endl;
     return 0;
 }
 int ejercicio4() {

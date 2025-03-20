@@ -1,19 +1,8 @@
 # ninja log v6
-63	1181	7641192759270926	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
-19	540	7641211955891378	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
-8	555	7641218161929875	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
-556	662	7641218167410707	untitled1.exe	2a87fc65fee1a9be
-73	906	7641506203236216	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
-906	1493	7641506211578267	untitled1.exe	2a87fc65fee1a9be
-21	560	7641510854720857	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
-560	658	7641510860114570	untitled1.exe	2a87fc65fee1a9be
-25	922	7641517769443125	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
-923	1042	7641517778426111	untitled1.exe	2a87fc65fee1a9be
-25	616	7641518264358621	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
-617	714	7641518270283908	untitled1.exe	2a87fc65fee1a9be
-23	602	7641518431849197	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
-602	740	7641518437641851	untitled1.exe	2a87fc65fee1a9be
-22	598	7641518661851019	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
-599	749	7641518667625675	untitled1.exe	2a87fc65fee1a9be
-23	663	7641520053901670	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
-664	761	7641520060312296	untitled1.exe	2a87fc65fee1a9be
+22	712	7641523331054291	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
+712	814	7641523337966377	untitled1.exe	2a87fc65fee1a9be
+90	1175	7641608739813029	build.ninja	daeef16358fe7047
+36	1299	7641608741567913	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
+1300	1813	7641608754189415	untitled1.exe	2a87fc65fee1a9be
+24	719	7641611016451387	CMakeFiles/untitled1.dir/main.cpp.obj	ca03abb8112d738f
+720	830	7641611023410911	untitled1.exe	2a87fc65fee1a9be

@@ -112,6 +112,13 @@ int ejercicio1() {
 int ejercicio2() {
     cout << "Ejercicio 2 If-Else: " << endl;
     cout << "Programa que verifique si un numero ingresado por el usuario es par o impar: " << endl;
+    int b;
+    cin >> b;
+    if (b % 2 == 0) {
+        cout << "El numero " << b << " es par" << endl;
+    } else {
+        cout << "El numero " << b << " es impar" << endl;
+    }
 
     return 0;
 }

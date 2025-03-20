@@ -91,13 +91,27 @@ int main() {
 }
 int ejercicio1() {
     cout << "Ejercicio 1 If-Else: " << endl;
-    cout << "Programa que determine si un número ingresado por el usuario es positivo, negativo o cero: " << endl;
+    cout << "Programa que determine si un numero ingresado por el usuario es positivo, negativo o cero: " << endl;
+    int a;
+    cin >> a;
+    if (a > 0) {
+        cout << "El numero " << a << " es positivo" << endl;
+    } else {
+        if (a < 0) {
+            cout << "El numero " << a << " es negativo" << endl;
+        } else {
+            if (a == 0) {
+                cout << "El numero " << a << " es igual a 0" << endl;
+            }
+        }
+    }
+    cout << endl;
 
     return 0;
 }
 int ejercicio2() {
     cout << "Ejercicio 2 If-Else: " << endl;
-    cout << "Programa que verifique si un número ingresado por el usuario es par o impar: " << endl;
+    cout << "Programa que verifique si un numero ingresado por el usuario es par o impar: " << endl;
 
     return 0;
 }

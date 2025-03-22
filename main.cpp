@@ -2,75 +2,82 @@
 #include <math.h>
 using namespace std;
 
-int ejercicio1();
+void ejercicio1();
 int ejercicio2();
-int ejercicio3();
+void ejercicio3();
 int ejercicio4();
-int ejercicio5();
+void ejercicio5();
 int ejercicio6();
-int ejercicio7();
+void ejercicio7();
 int ejercicio8();
-int ejercicio9();
+void ejercicio9();
 int ejercicio10();
-int ejercicio11();
+void ejercicio11();
 int ejercicio12();
-int ejercicio13();
+void ejercicio13();
 int ejercicio14();
-int ejercicio15();
+void ejercicio15();
 int ejercicio16();
-int ejercicio17();
+void ejercicio17();
 int ejercicio18();
-int ejercicio19();
+void ejercicio19();
 int ejercicio20();
-int ejercicio21();
+void ejercicio21();
 int ejercicio22();
-int ejercicio23();
+void ejercicio23();
 int ejercicio24();
-int ejercicio25();
+void ejercicio25();
 int ejercicio26();
-int ejercicio27();
+void ejercicio27();
 int ejercicio28();
-int ejercicio29();
+void ejercicio29();
 int ejercicio30();
 
 int ejecutarEjercicio(int ejercicio) {
     switch (ejercicio) {
-        case 1: return ejercicio1();
+
         case 2: return ejercicio2();
-        case 3: return ejercicio3();
         case 4: return ejercicio4();
-        case 5: return ejercicio5();
         case 6: return ejercicio6();
-        case 7: return ejercicio7();
         case 8: return ejercicio8();
-        case 9: return ejercicio9();
         case 10: return ejercicio10();
-        case 11: return ejercicio11();
         case 12: return ejercicio12();
-        case 13: return ejercicio13();
         case 14: return ejercicio14();
-        case 15: return ejercicio15();
         case 16: return ejercicio16();
-        case 17: return ejercicio17();
         case 18: return ejercicio18();
-        case 19: return ejercicio19();
         case 20: return ejercicio20();
-        case 21: return ejercicio21();
         case 22: return ejercicio22();
-        case 23: return ejercicio23();
         case 24: return ejercicio24();
-        case 25: return ejercicio25();
         case 26: return ejercicio26();
-        case 27: return ejercicio27();
         case 28: return ejercicio28();
-        case 29: return ejercicio29();
         case 30: return ejercicio30();
         default:
             cout << "Este ejercicio no existe" << endl;
         return -1;
     }
 }
+void ejecutarEjercicioVoid(int ejercicioVoid) {
+    switch (ejercicioVoid) {
+        case 1: return ejercicio1();
+        case 3: return ejercicio3();
+        case 5: return ejercicio5();
+        case 7: return ejercicio7();
+        case 9: return ejercicio9();
+        case 11: return ejercicio11();
+        case 13: return ejercicio13();
+        case 15: return ejercicio15();
+        case 17: return ejercicio17();
+        case 19: return ejercicio19();
+        case 21: return ejercicio21();
+        case 23: return ejercicio23();
+        case 25: return ejercicio25();
+        case 27: return ejercicio27();
+        case 29: return ejercicio29();
+        default:
+            cout << "Este ejercicio no existe" << endl;
 
+    }
+}
 
 int main() {
     int opcion;
@@ -85,12 +92,17 @@ int main() {
             int ejercicio;
             cout << "Ingrese una opcion del 1 al 30: " << endl;
             cin >> ejercicio;
-            ejecutarEjercicio(ejercicio);
+            if (ejercicio % 2 == 0) {
+                ejecutarEjercicio(ejercicio);
+            } else {
+                ejecutarEjercicioVoid(ejercicio);
+            }
         }
-    } while (opcion != 2);
+
+    }while (opcion != 2);
     return 0;
 }
-int ejercicio1() {
+void ejercicio1() {
     cout << "Ejercicio 1 If-Else: " << endl;
     cout << "Programa que determine si un numero ingresado por el usuario es positivo, negativo o cero: " << endl;
     int a;
@@ -108,7 +120,7 @@ int ejercicio1() {
     }
     cout << endl;
 
-    return 0;
+
 }
 int ejercicio2() {
     cout << "Ejercicio 2 If-Else: " << endl;
@@ -123,7 +135,7 @@ int ejercicio2() {
 
     return 0;
 }
-int ejercicio3() {
+void ejercicio3() {
     cout << "Ejercicio 3 If-Else: " << endl;
     cout << "Programa que solicite al usuario ingresar tres numeros y muestre el mayor de los tres: " << endl;
     int c, d, e;
@@ -139,22 +151,22 @@ int ejercicio3() {
     if (e > mayor)
     mayor = e;
     cout << "El numero mayor es: " << mayor << endl;
-    return 0;
+
 }
 int ejercicio4() {
     cout << "Ejercicio 4 If-Else: " << endl;
     cout << "Programa que determine si un año ingresado por el usuario es bisiesto o no: " << endl;
     int f;
     cin >> f;
-if (f % 4 == 0) {
-cout << "El numero " << f << " es bisiesto" << endl;
+if ((f % 4 == 0 && f % 100 != 0) || (f % 400 == 0)){
+cout << "El año " << f << " es bisiesto" << endl;
 } else {
-cout << "El numero " << f << " no es bisiesto" << endl;
+cout << "El año " << f << " no es bisiesto" << endl;
 }
 
     return 0;
 }
-int ejercicio5() {
+void ejercicio5() {
     cout << "Ejercicio 5 If-Else: " << endl;
     cout << "Programa que determine si una letra ingresada por el usuario es vocal o consonante: " << endl;
     char c;
@@ -168,7 +180,7 @@ cout << "La letra " << c << " vocal" << endl;
 else
 cout << "La letra " << c << " consonante" << endl;
 
-    return 0;
+
 }
 int ejercicio6() {
     cout << "Ejercicio 6 If-Else: " << endl;
@@ -188,7 +200,7 @@ cout << "El numero " << g << " es primo" << endl;
 
     return 0;
 }
-int ejercicio7() {
+void ejercicio7() {
     cout << "Ejercicio 7 If-Else: " << endl;
     cout << "Programa que determine si un año ingresado por el usuario es un año de nacimiento valido (mayor que 1900 y menor que el año actual): " << endl;
     int h;
@@ -199,7 +211,7 @@ cout << "Su año de nacimiento es " << h << ", gracias por ingresarlo" << endl;
 cout << "El numero " << h << " no es valido" << endl;
 } if (h > 2025) {
 cout << "Usted todavia no ha nacido! XD" << endl;}
-    return 0;
+
 }
 int ejercicio8() {
     cout << "Ejercicio 8 If-Else: " << endl;
@@ -224,7 +236,7 @@ int ejercicio8() {
     }
     return 0;
 }
-int ejercicio9() {
+void ejercicio9() {
     cout << "Ejercicio 9 If-Else: " << endl;
     cout << "Programa en C++ que solicite al usuario ingresar la calificacion numerica (0-100): " << endl;
     int h;
@@ -243,7 +255,7 @@ int ejercicio9() {
     } else if (h >= 0 && h <= 59) {
         cout << "Necesita mejorar, esta reprobado/a con una F" << endl;
     }
-    return 0;
+
 }
 int ejercicio10() {
     cout << "Ejercicio 10 If-Else: " << endl;
@@ -275,7 +287,7 @@ int ejercicio10() {
 
     return 0;
 }
-int ejercicio11() {
+void ejercicio11() {
     cout << "Ejercicio 11 Bucle While: " << endl;
     cout << "Programa que imprima los numeros del 1 al 20 en orden ascendente: " << endl;
     int i = 1;
@@ -283,7 +295,7 @@ int ejercicio11() {
         cout << i << endl;
         i++;
     }
-    return 0;
+
 }
 int ejercicio12() {
     cout << "Ejercicio 12 Bucle While: " << endl;
@@ -299,7 +311,7 @@ int ejercicio12() {
     }
     return 0;
 }
-int ejercicio13() {
+void ejercicio13() {
     cout << "Ejercicio 13 Bucle While: " << endl;
     cout << "Programa que pida al usuario ingresar numeros positivos y los sume, deteniendose cuando ingresa un numero negativo: " << endl;
     int sum = 0, numero;
@@ -312,7 +324,7 @@ int ejercicio13() {
         }
     } while (numero > 1);
     cout << "La suma es: " << sum << endl;
-    return 0;
+
 }
 int ejercicio14() {
     cout << "Ejercicio 14 Bucle While: " << endl;
@@ -335,7 +347,7 @@ int ejercicio14() {
     cout << endl;
     return 0;
 }
-int ejercicio15() {
+void ejercicio15() {
     cout << "Ejercicio 15 Bucle While: " << endl;
     cout << "Programa que solicite al usuario ingresar numeros hasta que la suma de los numeros ingresados sea mayor a 100: " << endl;
     int numero1 = 0, suma1 = 0, contador= 0;
@@ -351,7 +363,7 @@ int ejercicio15() {
     cout << endl;
     cout << "La suma es: " << suma1 << endl;
 
-    return 0;
+
 }
 int ejercicio16() {
     cout << "Ejercicio 16 Bucle While: " << endl;
@@ -370,7 +382,7 @@ int ejercicio16() {
     }
     return 0;
 }
-int ejercicio17() {
+void ejercicio17() {
     cout << "Ejercicio 17 Bucle While: " << endl;
     cout << "Programa que calcule la media de una serie de numeros ingresados por el usuario: " << endl;
     int o = 2;
@@ -391,7 +403,7 @@ int ejercicio17() {
     double promedio = static_cast<double>(suma2) / 2;
     cout << endl;
     cout << "La media es: " << promedio << endl;
-    return 0;
+
 }
 int ejercicio18() {
     cout << "Ejercicio 18 Bucle While: " << endl;
@@ -408,7 +420,7 @@ int ejercicio18() {
     cout << "El programa se hizo rebelde, quiso sumar y logro: " << suma3 << endl;
     return 0;
 }
-int ejercicio19() {
+void ejercicio19() {
     cout << "Ejercicio 19 Bucle While: " << endl;
     cout << "Programa que imprima los primeros 10 numeros naturales y su respectivo cuadrado: " << endl;
     int numero5 = 1;
@@ -417,7 +429,7 @@ int ejercicio19() {
         numero5++;
     }
     cout << endl;
-    return 0;
+
 }
 int ejercicio20() {
     cout << "Ejercicio 20 Bucle While: " << endl;
@@ -432,7 +444,7 @@ int ejercicio20() {
 
     return 0;
 }
-int ejercicio21() {
+void ejercicio21() {
     cout << "Ejercicio 21 Bucle For: " << endl;
     cout << "Programa que imprima los numeros pares del 2 al 20: " << endl;
     int s;
@@ -441,7 +453,7 @@ int ejercicio21() {
             cout << s << endl;
         }
     }
-    return 0;
+
 }
 int ejercicio22() {
     cout << "Ejercicio 22 Bucle For: " << endl;
@@ -455,7 +467,7 @@ int ejercicio22() {
     }
     return 0;
 }
-int ejercicio23() {
+void ejercicio23() {
     cout << "Ejercicio 23 Bucle For: " << endl;
     cout << "Programa en C++ que solicite al usuario ingresar un numero entero positivo n y luego calcule la suma de todos los numeros pares desde 1 hasta n " << endl;
     int u;
@@ -467,7 +479,7 @@ int ejercicio23() {
     }
     cout << endl;
     cout << "La suma de los pares hasta " << u << " es: " << suma6 << endl;
-    return 0;
+
 }
 int ejercicio24() {
     cout << "Ejercicio 24 Bucle For: " << endl;
@@ -487,7 +499,7 @@ int ejercicio24() {
     }
     return 0;
 }
-int ejercicio25() {
+void ejercicio25() {
     cout << "Ejercicio 25 Bucle For: " << endl;
     cout << "Programa que imprima la serie de numeros primos del 1 al 50: " << endl;
     for (int z = 2 ; z <= 50 ; z++) {
@@ -502,7 +514,7 @@ int ejercicio25() {
         }
     cout << endl;
     }
-    return 0;
+
 }
 int ejercicio26() {
     cout << "Ejercicio 26 Bucle For: " << endl;
@@ -519,7 +531,7 @@ int ejercicio26() {
     cout << endl;
     return 0;
 }
-int ejercicio27() {
+void ejercicio27() {
     cout << "Ejercicio 27 Bucle For: " << endl;
     cout << "Programa que imprima los primeros 10 terminos de la serie de Fibonacci: " << endl;
     int fibo, te1 = 0, te2 = 1, sigTerm = 0;
@@ -533,7 +545,7 @@ int ejercicio27() {
         te2 = sigTerm;
     cout << endl;
     }
-    return 0;
+
 }
 int ejercicio28() {
     cout << "Ejercicio 28 Bucle For: " << endl;
@@ -548,7 +560,7 @@ int ejercicio28() {
     cout << "La suma total es: " << suma8 << endl;
     return 0;
 }
-int ejercicio29() {
+void ejercicio29() {
     cout << "Ejercicio 29 Bucle For: " << endl;
     cout << "Programa que pida al usuario ingresar un numero y luego imprima todos los divisores de ese numero: " << endl;
     int div, cont = 0;
@@ -563,7 +575,6 @@ int ejercicio29() {
         }
     }
     cout << "Su numero tiene " << cont << " divisores"<<endl;
-    return 0;
 }
 int ejercicio30() {
     cout << "Ejercicio 30 Bucle For: " << endl;

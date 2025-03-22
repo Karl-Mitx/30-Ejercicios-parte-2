@@ -58,21 +58,21 @@ int ejecutarEjercicio(int ejercicio) {
 }
 void ejecutarEjercicioVoid(int ejercicioVoid) {
     switch (ejercicioVoid) {
-        case 1: return ejercicio1();
-        case 3: return ejercicio3();
-        case 5: return ejercicio5();
-        case 7: return ejercicio7();
-        case 9: return ejercicio9();
-        case 11: return ejercicio11();
-        case 13: return ejercicio13();
-        case 15: return ejercicio15();
-        case 17: return ejercicio17();
-        case 19: return ejercicio19();
-        case 21: return ejercicio21();
-        case 23: return ejercicio23();
-        case 25: return ejercicio25();
-        case 27: return ejercicio27();
-        case 29: return ejercicio29();
+        case 1:   ejercicio1(); break;
+        case 3:   ejercicio3(); break;
+        case 5:   ejercicio5(); break;
+        case 7:   ejercicio7(); break;
+        case 9:   ejercicio9(); break;
+        case 11:  ejercicio11(); break;
+        case 13:  ejercicio13(); break;
+        case 15:  ejercicio15(); break;
+        case 17:  ejercicio17(); break;
+        case 19:  ejercicio19(); break;
+        case 21:  ejercicio21(); break;
+        case 23:  ejercicio23(); break;
+        case 25:  ejercicio25(); break;
+        case 27:  ejercicio27(); break;
+        case 29:  ejercicio29(); break;
         default:
             cout << "Este ejercicio no existe" << endl;
 
